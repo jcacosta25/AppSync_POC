@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stream_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Stream"
+        app:layout_constraintEnd_toStartOf="@+id/stream_delete"
+        app:layout_constraintStart_toEndOf="@+id/stream_add"
+        app:layout_constraintTop_toBottomOf="@+id/messages_total" />
+
+    <TextView
+        android:id="@+id/class_work_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Classwork"
+        app:layout_constraintEnd_toStartOf="@+id/class_work_delete"
+        app:layout_constraintStart_toEndOf="@+id/class_work_add"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/messages_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Messages"
+        app:layout_constraintEnd_toStartOf="@+id/messages_delete"
+        app:layout_constraintStart_toEndOf="@+id/messages_add"
+        app:layout_constraintTop_toBottomOf="@+id/class_work_total" />
+
+    <Button
+        android:id="@+id/class_work_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="@+id/class_work_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/class_work_title" />
+
+    <Button
+        android:id="@+id/class_work_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="@+id/class_work_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/class_work_title" />
+
+    <Button
+        android:id="@+id/messages_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="@+id/messages_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/messages_title" />
+
+    <Button
+        android:id="@+id/messages_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="DELETE"
+        app:layout_constraintBottom_toBottomOf="@+id/messages_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/messages_title" />
+
+    <Button
+        android:id="@+id/stream_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="@+id/stream_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stream_title" />
+
+    <Button
+        android:id="@+id/stream_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="@+id/stream_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/stream_title" />
+
+    <TextView
+        android:id="@+id/class_work_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/class_work_title"
+        app:layout_constraintStart_toStartOf="@+id/class_work_title"
+        app:layout_constraintTop_toBottomOf="@+id/class_work_title" />
+
+    <TextView
+        android:id="@+id/messages_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/messages_title"
+        app:layout_constraintStart_toStartOf="@+id/messages_title"
+        app:layout_constraintTop_toBottomOf="@+id/messages_title" />
+
+    <TextView
+        android:id="@+id/stream_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/stream_title"
+        app:layout_constraintStart_toStartOf="@+id/stream_title"
+        app:layout_constraintTop_toBottomOf="@+id/stream_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

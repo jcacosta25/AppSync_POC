@@ -1,0 +1,22 @@
+# this is an auto generated file. This will be overwritten
+query GetUserBadges($user_id: String!, $client_id: String!) {
+  getUserBadges(user_id: $user_id, client_id: $client_id) {
+    client_id
+    user_id
+    badges
+  }
+}
+query ListUserBadges(
+  $filter: TableUserBadgesFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUserBadges(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      client_id
+      user_id
+      badges
+    }
+    nextToken
+  }
+}

@@ -1,0 +1,38 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateUserBadges(
+  $client_id: String
+  $user_id: String
+  $badges: String
+) {
+  onCreateUserBadges(
+    client_id: $client_id
+    user_id: $user_id
+    badges: $badges
+  ) {
+    client_id
+    user_id
+    badges
+  }
+}
+subscription OnUpdateUserBadges($client_id: String, $user_id: String) {
+  onUpdateUserBadges(client_id: $client_id, user_id: $user_id) {
+    client_id
+    user_id
+    badges
+  }
+}
+subscription OnDeleteUserBadges(
+  $client_id: String
+  $user_id: String
+  $badges: String
+) {
+  onDeleteUserBadges(
+    client_id: $client_id
+    user_id: $user_id
+    badges: $badges
+  ) {
+    client_id
+    user_id
+    badges
+  }
+}

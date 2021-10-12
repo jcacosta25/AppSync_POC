@@ -1,0 +1,22 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateUserBadges($input: CreateUserBadgesInput!) {
+  createUserBadges(input: $input) {
+    client_id
+    user_id
+    badges
+  }
+}
+mutation UpdateUserBadges($input: UpdateUserBadgesInput!) {
+  updateUserBadges(input: $input) {
+    client_id
+    user_id
+    badges
+  }
+}
+mutation DeleteUserBadges($input: DeleteUserBadgesInput!) {
+  deleteUserBadges(input: $input) {
+    client_id
+    user_id
+    badges
+  }
+}
